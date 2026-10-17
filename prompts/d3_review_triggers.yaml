@@ -1,0 +1,19 @@
+# D3 — Human-review trigger mapping (v1.0)
+# All scripts ORIGINAL and benign. Varies length and submission timing to map
+# review latency / flag behavior. Observational only.
+# Hypothesis to test: longer or repeated generations show higher latency/flag rates.
+
+base_script: >
+  The harbor lights flickered on as the evening ferry made its final crossing.
+  Gulls circled overhead, and the smell of salt hung in the cool air. On the
+  deck, a traveler watched the shoreline fade into the dusk, thinking of home.
+
+lengths_chars: [50, 200, 500, 1000]
+# For lengths beyond the base script, the script is extended by repetition with
+# numbered section headers (still benign, still original).
+# NOTE: trimmed from [50,200,500,1000,2000]x3 to fit the free-tier 10k char/mo
+# budget alongside D1+D2+D4. Documented as a study limitation.
+
+repeats_per_length: 2
+# Measurements per run: request_id, chars, submitted_at, completed_at,
+# latency_s, flagged (bool), error class if any.

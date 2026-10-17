@@ -1,0 +1,8 @@
+{"battery": "d3", "battery_version": "1.0", "chars": 50, "rep": 0, "label": "comply", "error_class": "", "latency_s": 1.4, "wall_s": 23.8, "request_id": "AWzmRuy8L7CfuQsFbFif", "ts": "2026-10-17T12:43:22.306743+00:00"}
+{"battery": "d3", "battery_version": "1.0", "chars": 50, "rep": 1, "label": "comply", "error_class": "", "latency_s": 1.5, "wall_s": 20.5, "request_id": "Teg6nnbeHlfEcIxV1zWI", "ts": "2026-10-17T12:43:42.789493+00:00"}
+{"battery": "d3", "battery_version": "1.0", "chars": 200, "rep": 0, "label": "comply", "error_class": "", "latency_s": 3.8, "wall_s": 28.1, "request_id": "aaEmQvM3FOtg89HTf6Um", "ts": "2026-10-17T12:44:10.912675+00:00"}
+{"battery": "d3", "battery_version": "1.0", "chars": 200, "rep": 1, "label": "comply", "error_class": "", "latency_s": 3.7, "wall_s": 22.0, "request_id": "V8amuUXMlmLqytdf5HMx", "ts": "2026-10-17T12:44:32.922014+00:00"}
+{"battery": "d3", "battery_version": "1.0", "chars": 500, "rep": 0, "label": "comply", "error_class": "", "latency_s": 8.3, "wall_s": 25.3, "request_id": "s5R16L1Z1BUQhaAVJPIQ", "ts": "2026-10-17T12:44:58.183375+00:00"}
+{"battery": "d3", "battery_version": "1.0", "chars": 500, "rep": 1, "label": "comply", "error_class": "", "latency_s": 8.6, "wall_s": 26.5, "request_id": "oSEKa4ZL0y8KgmB8RbyE", "ts": "2026-10-17T12:45:24.656298+00:00"}
+{"battery": "d3", "battery_version": "1.0", "chars": 1000, "rep": 0, "label": "comply", "error_class": "", "latency_s": 15.1, "wall_s": 29.4, "request_id": "b5tuPonSzll1mjuEhNzn", "ts": "2026-10-17T12:45:54.060701+00:00"}
+{"battery": "d3", "battery_version": "1.0", "chars": 1000, "rep": 1, "label": "comply", "error_class": "", "latency_s": 14.9, "wall_s": 26.1, "request_id": "5u0ObQszesMa6jc2cfga", "ts": "2026-10-17T12:46:20.177705+00:00"}

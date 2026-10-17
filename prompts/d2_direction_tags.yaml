@@ -1,0 +1,56 @@
+# D2 — Direction-tag behavior catalog (v1.0)
+# Tests inline direction/emotion tags on STOCK voices via normal TTS use.
+# Method: each tag is embedded in a neutral carrier sentence; a tag-free control
+# is generated for the same sentence. Acoustic delta (energy/spectral) is measured.
+# Also records: tag rendered as effect vs. tag spoken aloud as literal words vs. error.
+# All tags are documented or community-known ElevenLabs v4 inline tags. Unknown tags
+# probe error behavior only — no evasion, no trickery.
+
+carrier: "The results arrived this morning, and everyone in the room fell silent."
+
+tags:
+  - tag: "[laughter]"
+    hypothesis: paralinguistic laugh insertion
+  - tag: "[laughs]"
+    hypothesis: paralinguistic laugh insertion
+  - tag: "[chuckle]"
+    hypothesis: subtle laugh insertion
+  - tag: "[whisper]"
+    hypothesis: lowered energy / breathy rendering
+  - tag: "[whispering]"
+    hypothesis: lowered energy / breathy rendering
+  - tag: "[sigh]"
+    hypothesis: paralinguistic sigh insertion
+  - tag: "[sighs]"
+    hypothesis: paralinguistic sigh insertion
+  - tag: "[pause]"
+    hypothesis: inserted silence
+  - tag: "[dramatic pause]"
+    hypothesis: inserted silence
+  - tag: "[excited]"
+    hypothesis: raised pitch/energy emotion
+  - tag: "[sad]"
+    hypothesis: lowered pitch/energy emotion
+  - tag: "[angry]"
+    hypothesis: raised energy emotion
+  - tag: "[nervous]"
+    hypothesis: tremor/pitch-variance emotion
+  - tag: "[crying]"
+    hypothesis: sob-like rendering
+  - tag: "[gasp]"
+    hypothesis: sharp inhale insertion
+  - tag: "[cough]"
+    hypothesis: cough insertion
+  - tag: "[yawn]"
+    hypothesis: yawn insertion
+  - tag: "[mhm]"
+    hypothesis: backchannel insertion
+
+unknown_tags:
+  - tag: "[flibbertigibbet]"
+    hypothesis: unknown tag -> spoken literally, ignored, or error
+  - tag: "[quantum-entanglement]"
+    hypothesis: unknown tag -> spoken literally, ignored, or error
+
+# Placement variants (subset, to bound credit spend): tag at start vs. mid-sentence.
+placements: ["start", "mid"]

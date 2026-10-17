@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+# Audio binaries are gitignored by default; curated demo clips are force-added.
+results/audio/
+.env
+.DS_Store
+# Result JSONL logs ARE committed (evidence + reproducibility, no secrets in them).
